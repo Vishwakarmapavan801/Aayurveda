@@ -189,7 +189,7 @@ img {
 
 @media (max-width: 768px) {
   .about-container {
-    padding: 20px 15px;
+    padding: 20px 20px;
   }
 
   .about-content h2 {
@@ -207,5 +207,11 @@ img {
 
   .img img {
     width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-container {
+    padding: 30px 40px;
   }
 }

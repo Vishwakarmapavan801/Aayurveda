@@ -1,0 +1,12 @@
+body, html {
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body, html {
+    padding: 0;
+  }
+}

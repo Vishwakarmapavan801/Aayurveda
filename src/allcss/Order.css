@@ -48,6 +48,7 @@
 /* MOBILE */
 @media (max-width: 600px) {
   .order-product {
+    padding: 20px 0;
     flex-direction: column;
     text-align: center;
   }
