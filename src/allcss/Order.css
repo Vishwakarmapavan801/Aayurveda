@@ -1,4 +1,4 @@
-.order-container {
+/* .order-container {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
@@ -45,11 +45,114 @@
   cursor: pointer;
 }
 
-/* MOBILE */
 @media (max-width: 600px) {
   .order-product {
     padding: 20px 0;
     flex-direction: column;
     text-align: center;
   }
+} */
+
+
+.order-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
 }
+
+.order-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* PRODUCT SUMMARY */
+.order-product {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.order-product img {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.order-product h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.order-price {
+  color: #b12704;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* FORM */
+.order-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.order-form input {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.order-form input:focus {
+  outline: none;
+  border-color: #25d366;
+}
+
+/* BUTTON */
+.order-form button {
+  margin-top: 10px;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-form button:hover {
+  background: #1ebe5d;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .order-container {
+    padding: 15px;
+  }
+
+  .order-product {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .order-product img {
+    width: 160px;
+  }
+
+  .order-container h2 {
+    font-size: 22px;
+  }
+}
+

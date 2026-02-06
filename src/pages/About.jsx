@@ -429,16 +429,16 @@ Gynecologist से consult करने पर उन्होने हमा�
           के 1 महीने बाद मेरी pregnancy report positive आयी।
         </p>
 
-        <button className="mf-btn">Order Now</button>
+        {/* <button className="mf-btn">Order Now</button> */}
       </div>
 
-      <div className="mf-slider">
+      {/* <div className="mf-slider">
         <button className="nav left" onClick={prevSlide}>‹</button>
 
         <img src={images[index]} alt="slide" />
 
         <button className="nav right" onClick={nextSlide}>›</button>
-      </div>
+      </div> */}
     </div>
 
       </div>

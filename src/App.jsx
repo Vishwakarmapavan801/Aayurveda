@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
+import Ecommerce from "./pages/Ecommerce";
 import Order from "./pages/Order";
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/order" element={<Order />} />
+        <Route path="/ecommerce" element={<Ecommerce />} />
       </Routes>
     </BrowserRouter>
   

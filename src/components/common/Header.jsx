@@ -1,32 +1,43 @@
-// import { NavLink } from "react-router-dom";
-// import logo from "../../assets/logo.png";
 
-// import '../common/Header.css'
+
+
+// import { NavLink } from "react-router-dom";
+// import { useState } from "react";
+// import { List, X } from "react-bootstrap-icons";
+
+// import logo from "../../assets/logo.png";
+// import "../common/Header.css";
 
 // const Header = () => {
+//   const [menuOpen, setMenuOpen] = useState(false);
+
 //   return (
 //     <header className="header">
-      
-//       {/* Left Logo (Clickable → Home) */}
+
 //       <div className="logo">
 //         <NavLink to="/">
 //           <img src={logo} alt="Logo" />
 //         </NavLink>
 //       </div>
 
-//       {/* Center Nav */}
-//       <nav className="nav">
-//         <NavLink to="/">Home</NavLink>
-//         <NavLink to="/about">About Us</NavLink>
-//         <NavLink to="/product">Product</NavLink>
-//         <NavLink to="/contact">Contact</NavLink>
+//       <nav className={`nav ${menuOpen ? "active" : ""}`}>
+//         <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
+//         <NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink>
+//         <NavLink to="/product" onClick={() => setMenuOpen(false)}>Product</NavLink>
+//         <NavLink to="/Ecommerce" onClick= {() => setMenuOpen (false)}>Ecommerce</NavLink>Ecommerce
+//         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
 //       </nav>
 
-//       {/* Right Button */}
 //       <div className="order-btn">
-//         <NavLink to="/order">
+//         <NavLink to="/Ecommerce">
 //           <button>Order Now</button>
 //         </NavLink>
+//       </div>
+     
+
+
+//       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+//         {menuOpen ? <X size={28} /> : <List size={28} />}
 //       </div>
 
 //     </header>
@@ -50,9 +61,8 @@ const Header = () => {
 
   return (
     <header className="header">
-
       <div className="logo">
-        <NavLink to="/">
+        <NavLink to="/" onClick={() => setMenuOpen(false)}>
           <img src={logo} alt="Logo" />
         </NavLink>
       </div>
@@ -61,11 +71,13 @@ const Header = () => {
         <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
         <NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink>
         <NavLink to="/product" onClick={() => setMenuOpen(false)}>Product</NavLink>
+        <NavLink to="/ecommerce" onClick={() => setMenuOpen(false)}>Ecommerce</NavLink>
         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
       </nav>
 
+      {/* ORDER NOW BUTTON */}
       <div className="order-btn">
-        <NavLink to="/order">
+        <NavLink to="/ecommerce" onClick={() => setMenuOpen(false)}>
           <button>Order Now</button>
         </NavLink>
       </div>
@@ -73,10 +85,8 @@ const Header = () => {
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <X size={28} /> : <List size={28} />}
       </div>
-
     </header>
   );
 };
 
 export default Header;
-
