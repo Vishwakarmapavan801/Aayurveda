@@ -81,7 +81,7 @@
 .mf-img img:last-child {
   position: absolute;
   z-index: 1;
-  width: 55%;
+  width: 40%;
   opacity: 0.9;
   animation: rotateClockwise 12s linear infinite;
 }
@@ -197,11 +197,11 @@ img {
   }
 
   .mf-img img:first-child {
-    width: 90%;
+    width: 60%;
   }
 
   .mf-img img:last-child {
-    width: 100%;
+    width: 40%;
     animation-duration: 10s;
   }
 
