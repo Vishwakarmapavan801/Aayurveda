@@ -1,46 +1,3 @@
-// import "../allcss/Contact.css";
-
-// const Contact = () => {
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     alert("✅ Message Sent Successfully");
-//   };
-
-//   return (
-//     <div className="contact-container">
-//       <h2>Contact Now</h2>
-//       <p className="contact-subtitle">
-//         Have any questions? We are happy to help you.
-//       </p>
-
-//       <div className="contact-box">
-//         {/* LEFT INFO */}
-//         <div className="contact-info">
-//           <h3>Get in Touch</h3>
-//           <p>📞 +91 9876543210</p>
-//           <p>📧 support@yourstore.com</p>
-//           <p>📍 Bhopal, Madhya Pradesh</p>
-//         </div>
-
-//         {/* FORM */}
-//         <form className="contact-form" onSubmit={handleSubmit}>
-//           <input type="text" placeholder="Your Name" required />
-//           <input type="email" placeholder="Your Email" required />
-//           <input type="tel" placeholder="Mobile Number" required />
-//           <textarea placeholder="Your Message" required />
-//           <button type="submit">Send Message</button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
-
-
-
-
 import { useState } from "react";
 import "../allcss/Contact.css";
 
@@ -49,6 +6,8 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
+    Pincode: "",
+    City: "",
     message: "",
   });
 
@@ -59,23 +18,25 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!form.name || !form.email || !form.phone || !form.message) {
-      alert("❌ Please fill all details");
+    if (!form.name || !form.email || !form.phone || !form.message || !form.City || !form.Pincode) {
+      alert("Please fill all details");
       return;
     }
 
     const whatsappMessage = `
-📩 *New Contact Message*
+*New Contact Message*
 
-👤 Name: ${form.name}
-📧 Email: ${form.email}
-📞 Phone: ${form.phone}
+Name: ${form.name}
+Email: ${form.email}
+Phone: ${form.phone}
+City: ${form.City}
+Pincode: ${form.Pincode}
 
-💬 Message:
+Message:
 ${form.message}
     `;
 
-    const adminNumber = "918103308023"; // 👉 apna WhatsApp number
+    const adminNumber = "919589954259";
 
     const whatsappURL = `https://wa.me/${adminNumber}?text=${encodeURIComponent(
       whatsappMessage
@@ -87,20 +48,16 @@ ${form.message}
   return (
     <div className="contact-container">
       <h2>Contact Now</h2>
-      <p className="contact-subtitle">
-        Have any questions? We are happy to help you.
-      </p>
 
       <div className="contact-box">
-        {/* LEFT INFO */}
+
         <div className="contact-info">
           <h3>Get in Touch</h3>
-          <p>📞 +91 8103308023</p>
-          <p>📧 support@yourstore.com</p>
-          <p>📍 Bhopal, Madhya Pradesh</p>
+          <p>+91 9589954259</p>
+          <p>support@aayurveda.com</p>
+          <p>Indore, Madhya Pradesh</p>
         </div>
 
-        {/* FORM */}
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -129,6 +86,24 @@ ${form.message}
             required
           />
 
+          <input
+            type="text"
+            name="City"
+            placeholder="City"
+            value={form.City}
+            onChange={handleChange}
+            required
+          />
+
+          <input
+            type="number"
+            name="Pincode"
+            placeholder="Pin Code"
+            value={form.Pincode}
+            onChange={handleChange}
+            required
+          />
+
           <textarea
             name="message"
             placeholder="Your Message"
@@ -140,10 +115,6 @@ ${form.message}
           <button type="submit">
             Send on WhatsApp
           </button>
-
-          <p style={{ fontSize: "12px", textAlign: "center", marginTop: "8px" }}>
-            WhatsApp open hone ke baad <b>SEND</b> dabana zaroori hai
-          </p>
         </form>
       </div>
     </div>
@@ -151,4 +122,3 @@ ${form.message}
 };
 
 export default Contact;
-

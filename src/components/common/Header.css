@@ -1,10 +1,10 @@
-
+/* 
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 15px 50px; */
+ 
   padding: 15px 10px;
   background: #fff;
   position: sticky;
@@ -13,7 +13,7 @@
 }
 
 .logo img {
-  height: 55px;
+  height: 70px;
 }
 
 .nav {
@@ -74,5 +74,136 @@
 
   .menu-icon {
     display: block;
+  }
+} */
+
+
+
+
+
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.logo img {
+  height: 65px;
+  width: auto;
+}
+
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ed0c7a;
+}
+
+.nav a.active {
+  color: #ed0c7a;
+}
+
+/* Order Button */
+.order-btn button {
+  padding: 10px 40px;
+  border: none;
+  background: linear-gradient(90deg, #ed0c7a 0%, #e76b35 100%);
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.order-btn button:hover {
+  opacity: 0.9;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+
+
+@media (max-width: 992px) {
+  .nav a {
+    font-size: 18px;
+  }
+
+  .order-btn button {
+    padding: 8px 25px;
+    font-size: 16px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .order-btn {
+    display: none;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0;
+    display: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
