@@ -16,7 +16,7 @@ const Order = () => {
     pin: "",
   });
 
-  // Redirect if product not selected
+  
   useEffect(() => {
     if (!state) {
       navigate("/");
