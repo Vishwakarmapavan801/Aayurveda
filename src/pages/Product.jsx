@@ -64,15 +64,15 @@ const AllProducts = () => {
 
           <div className="ec-info">
             <h3>Ling vardhak vacuum pump </h3>
-            <p className="ec-desc" >Ling vardha vacuum pump ke fayde
-              <br />
-              1 ling ka size 7 se 8 inch badhta hai
-              <br />
-              2 sex timing 25 se 30 minut hota Hai
-              <br />
-              3 swapnadosh band hota Hai ling mein achcha tanav aata Hai
-              <br />
-              4 result mein dekhna chalu hota hai</p>
+            <p className="ec-desc" >लिंग वर्धक वैक्यूम पंप
+
+              लिंग वर्धक वक्कुपम +कैप्सूल पूर्ण वेदा
+
+              लिंग वर्धा वैक्यूम पंप के फायदे
+              1 लिंग का साइज़ 7 से 8 इंच बढ़ता है
+              2 सेक्स टाइमिंग 25 से 30 मिनट होती है
+              3 स्वप्नदोष बंद होता है लिंग में अच्छा तनव आता है
+              4 रिजल्ट में देखना चालू होता है</p>
             <p className="ec-price">₹1499</p>
             <button
               className="ec-btn"
@@ -95,7 +95,11 @@ const AllProducts = () => {
           </div>
           <div className="ec-info">
             <h3>Aayurveda Capsule for Man</h3>
-            <p className="ec-desc">Durable • Easy install • Long life</p>
+            <p className="ec-desc">कैप्सूल के फायदे
+              1 लिंग का साइज बढ़ता है मोटा होता है
+              2 25 से 30 मिनट का समय बढ़ता है
+              3 शुक्रनु की कमी को दूर करता है वीर को अच्छा करता है
+              4 स्वप्नदोष स्वप्नदोष की समस्या को दूर करता है</p>
             <p className="ec-price">₹1499</p>
             <button
               className="ec-btn"
@@ -112,7 +116,7 @@ const AllProducts = () => {
           </div>
         </div>
 
-        <div className="ec-card">
+        {/* <div className="ec-card">
           <div className="ec-image-box">
             <img src={b4} className="ec-main-image" alt="Combo Pack" />
           </div>
@@ -133,7 +137,7 @@ const AllProducts = () => {
               Buy Now
             </button>
           </div>
-        </div>
+        </div> */}
 
         <div className="ec-card">
           <div className="ec-image-box">
@@ -141,7 +145,9 @@ const AllProducts = () => {
           </div>
           <div className="ec-info">
             <h3>Pump + Aayurveda Combo Capsule</h3>
-            <p className="ec-desc">Heavy duty • High flow</p>
+            <p className="ec-desc">कैप्सूल और पम्प के उपयोग से लिंंग मजबूत होता है
+              शुक्राणु बढ़ाने में काफी अच्छी मदद देता है
+              पंप से साइज बढ़ने में काफी मदद मिलती है</p>
             <p className="ec-price">₹2499</p>
             <button
               className="ec-btn"
@@ -185,8 +191,8 @@ const AllProducts = () => {
 
 
 
-      
-      
+
+
     </>
   );
 };

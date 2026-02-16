@@ -179,7 +179,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <NavLink to="/ecommerce" state={product}>
+          <NavLink to="/product" state={product}>
             <button className="buy-btn">Buy Now</button>
           </NavLink>
         </div>

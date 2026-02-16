@@ -3,6 +3,7 @@
 
 
 import React from "react";
+import Slider from "./Slider";
 import Hero from "./Hero";
 import Product from "./Product";
 // import  Ecommerce from './Ecommerce'
@@ -15,6 +16,12 @@ import Contact from "./Contact";
 const Home = () => {
   return (
     <>
+
+     <section id="hero">
+        <Slider />
+      </section>
+
+
       <section id="hero">
         <Hero />
       </section>
