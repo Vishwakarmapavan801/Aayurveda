@@ -1,4 +1,4 @@
-.ec-container {
+/* .ec-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-/* MOBILE */
+/* MOBILE * /
 @media (max-width: 768px) {
   .ec-container {
     grid-template-columns: 1fr;
@@ -76,4 +76,4 @@
     object-fit: contain;
     max-height: 320px;
   }
-}
+} */
