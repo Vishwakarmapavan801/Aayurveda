@@ -1,14 +1,15 @@
-/* Slider Container */
+
+
 .slick-slider {
     margin: 20px auto;
     max-width: 800px;
     text-align: center;
 }
 
-/* Images Styling */
+
 .slick-slide img {
     width: 100%;
-    max-width: 300px; /* Image size control */
+    max-width: 300px; 
     height: auto;
     margin: 0 auto 20px;
     display: block;
@@ -16,7 +17,7 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Global Button Style for Slider */
+
 button[class$="-btn"] {
     background-color: #ff4757;
     color: white;
@@ -33,7 +34,7 @@ button[class$="-btn"]:hover {
     background-color: #e84118;
 }
 
-/* Slide Heading */
+
 h3 {
     color: #2f3542;
     font-family: Arial, sans-serif;
